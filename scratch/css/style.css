@@ -1,0 +1,74 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* img{
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+} */
+#game{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+}
+.grid-cell{
+  border: 1px solid #000;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+.game-over{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgb(0 0 0 / 50%) 0 0 0 9999px;
+}
+.game-over-text{
+  position: absolute;
+  top: -200px;
+  font-size: 60px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  transform: translateX(-30%);
+}
+.visible{
+  display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.x::after{
+  content: '❌ ';
+}
+
+.o::after{
+  content: '⭕️ ';
+}
+
+.disabled{
+  cursor: not-allowed;
+}
+.grid-cell:not(.disabled):hover{
+  background: #eee;
+}
