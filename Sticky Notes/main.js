@@ -24,10 +24,10 @@ function saveNotes(notes) {
 
 function createNoteElement(id, content) {
   const element = document.createElement("textarea");
-  //"element" is a  javascript version of an html element
+  //"element" is a  javascript version of an html element in this case
 
-  element.classList.add("note");
-  element.value = content;
+  element.classList.add("note"); //add the class "note" to the newly created element (textarea for html) so that the css can manipulate it
+  element.value = content; //sets the value of the element to the content of the element from the html
   element.placeholder = "Empty Sticky Note";
 
   element.addEventListener("change", () => {
@@ -50,22 +50,22 @@ function createNoteElement(id, content) {
 function addNote() {
   const notes = getNotes();
   const noteObject = {
-    id: Math.floor(Math.random() * 100000),
-    content: ""
+    id: Math.floor(Math.random() * 100000), //gets a random number to assign as the ID
+    content: "" // default content is just an empty string
   };
 
-  const noteElement = createNoteElement(noteObject.id, noteObject.content);
-  notesContainer.insertBefore(noteElement, addNoteButton);
+  const noteElement = createNoteElement(noteObject.id, noteObject.content); // createNoteElement from alittle above is now assigned the id and the default note 
+  notesContainer.insertBefore(noteElement, addNoteButton); //inside the div place the noteElement before the addNoteButton
 
-  notes.push(noteObject);
-  saveNotes(notes);
+  notes.push(noteObject); //pushes new content to the notes array that was called in the beginning of the function
+  saveNotes(notes); // adds it to the local storage
 }
 
 function updateNote(id, newContent) {
-  const notes = getNotes();
-  const targetNote = notes.filter((note) => note.id == id)[0];
+  const notes = getNotes(); //calls all the notes to the function so that it can be checked in the next step
+  const targetNote = notes.filter((note) => note.id == id)[0]; // checks through all the notes to find the one that you are currently typing on 
 
-  targetNote.content = newContent;
+  targetNote.content = newContent; // "the content of the note i am working on will be set to the var newcontent "
   saveNotes(notes);
 }
 
