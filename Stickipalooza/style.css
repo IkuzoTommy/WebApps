@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    background-color:lightgreen;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    padding: 50px;
+    gap: 25px;
+    
+
+}
+
+.note{
+    height: 200px;
+    border: 1px dashed black;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+}
+
+.addNoteBttn{
+    border-radius: 10px;
+}
