@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+.welcomeSec{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+}
+.welcomeMssg{
+    color: white;
+    height: 100%;
+    width: 50%;
+}
+.welcome{
+    size: 30em; 
+}
+.pic{
+    width: 50%;
+    padding: 5%;
+}
+.pic img{
+
+    border: 5px solid white;
+    border-radius: 50px;
+}
+.aboutMe{
+    color: white;
+
+}
+.projects{
+    color: white;
+}
+.links {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+
+
+}
+.links li{
+    align-items: center;
+    size: 15px;
+    color: green;
+
+}
+.button{
+    color:blueviolet;
+
+
+    
+}
