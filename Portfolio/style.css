@@ -5,7 +5,8 @@
 body{
     background-color: black;
     margin: 0;
-    background-color: rgb(56,21,124)
+    background-color: rgb(56,21,124);
+    font-family: 'Yantramanav', sans-serif;
 }
 .header{
     margin: 0px;
@@ -78,17 +79,19 @@ body{
     align-items: center;
     list-style: none;
     border: 3px orange solid;
+    border-radius: 15px;
 
 
 
 }
 .button{
-    color:blueviolet;
-    align-items: center;
-    background-color: orangered;
-    width: 100px;
-    height: 50px;
-    font-size: 15px;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    font-weight: 500;
     
 
 
