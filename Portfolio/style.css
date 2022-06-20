@@ -7,6 +7,12 @@ body{
     margin: 0;
     background-color: rgb(56,21,124);
     font-family: 'Yantramanav', sans-serif;
+    padding: 0 5px 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
 }
 .header{
     margin: 0px;
@@ -16,52 +22,82 @@ body{
     border-radius: 2.5px;
     /* box-shadow: white; */
 }
+/* WELCOME SECTION */
 .welcomeSec{
-    width: 100vw;
-    height: 75vh;
+    width: 100%;
     display: flex;
     padding: 5px;
+    justify-content: space-evenly;
+    background-color: lightpink;
+    height: 25%;
 }
 .welcomeSec p{
-    color: black;
     text-align:center;
     color:white;
+    font-size: 40px;
+    font-weight: 300;
 }
 .welcomeMssg{
     color: white;
-    height: 100%;
+    /* height: 25%; */
     width: 50%;
-    padding: 5px;
     border: 2px solid black;
 
 }
 .welcome{
-    size: 39em; 
+    font-size: 3em; 
     text-align: center;
-    padding: 25% 0 25% 0;
+    /* padding: 25% 0 25% 0; */
 }
 .pic{
     width: 50%;
-    padding: 5%;
+    padding: 1%;
+    border: pink dashed .5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .pic img{
-
     border: 5px solid white;
     border-radius: 50px;
+    height: 400px;
+    width:400px;
 }
+/* BOUT ME SECTION */
 .aboutMe{
-    color: orange;
-    border: 5px white dashed;
+    height: 25%;
+    background-color: thistle;
     padding: 5px;
     display: flex;
     flex-direction: column;
 
-
-
+}
+.aboutMe h1{
+    margin: 0;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: orange;
 
 }
-.projects{
+.aboutMe p{
+    font-size: 1em;
+    font-weight: 300;
     color: white;
+}
+/* CONTACT ME */
+.contactMe{
+    height: 25%;
+    background-color: violet;
+}
+.contactMe h1{
+    margin: 0;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: orange;
 }
 .links {
     text-decoration: none;
@@ -72,28 +108,44 @@ body{
     height: 100%;
     width: 100%;
     padding: 0;
-
-
 }
 .links li{
     align-items: center;
     list-style: none;
     border: 3px orange solid;
     border-radius: 15px;
-
-
-
 }
 .button{
     color: white;
     background-color: rgba(0,0,0,0);
     width: 120px;
     height: 40px;
-    font-size: 20px;
+    font-size: 1.5em;
     border: none;
-    font-weight: 500;
-    
+    font-weight: 500;  
+}
 
-
-    
+/* PROJECTS */
+.projects{
+    height: 25%;
+    color: white;
+    background-color: tomato;
+    /* display: flex; */
+}
+.projects h1{
+    margin: 0;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: orange;
+}
+.proj{
+    margin: 0;
+    gap: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 1px solid white;
 }
