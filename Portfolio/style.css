@@ -7,7 +7,7 @@ body{
     margin: 0;
     background-color: rgb(56,21,124);
     font-family: 'Yantramanav', sans-serif;
-    padding: 0 5px 0 5px;
+    /* padding: 0 5px 0 5px; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -28,14 +28,17 @@ body{
     display: flex;
     padding: 5px;
     justify-content: space-evenly;
+    flex-direction: column;
     background-color: lightpink;
-    height: 25%;
+    height: auto;
 }
 .welcomeSec p{
     text-align:center;
     color:white;
-    font-size: 40px;
+    font-size: 2em;
     font-weight: 300;
+    margin: 0;
+    padding: 10px;
 }
 .welcomeMssg{
     color: white;
@@ -45,27 +48,16 @@ body{
 
 }
 .welcome{
-    font-size: 3em; 
+    font-size: 5em; 
     text-align: center;
+    margin: 0;
+    align-items: center;
     /* padding: 25% 0 25% 0; */
 }
-.pic{
-    width: 50%;
-    padding: 1%;
-    border: pink dashed .5px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.pic img{
-    border: 5px solid white;
-    border-radius: 50px;
-    height: 400px;
-    width:400px;
-}
+
 /* BOUT ME SECTION */
 .aboutMe{
-    height: 25%;
+    height: auto;
     background-color: thistle;
     padding: 5px;
     display: flex;
@@ -74,26 +66,52 @@ body{
 }
 .aboutMe h1{
     margin: 0;
-    font-size: 4em;
+    font-size: 2.5em;
     display: flex;
     justify-content: center;
     font-weight: 700;
     color: orange;
+    padding-top: 5px;
 
 }
-.aboutMe p{
-    font-size: 1em;
+.aboutMe .bioBlurb p{
+    font-size: 1.5em;
     font-weight: 300;
     color: white;
+    margin: 0;
+    text-align: center;
+}
+.bioBlurb{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    
+
+}
+.pic{
+    width: auto;
+    height: auto;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pic img{
+    border: 5px solid white;
+    border-radius: 300px;
+    height: 250px;
+    width:250px;
 }
 /* CONTACT ME */
 .contactMe{
-    height: 25%;
+    height: auto;
     background-color: violet;
+
 }
 .contactMe h1{
     margin: 0;
-    font-size: 4em;
+    font-size: 2.5em;
     display: flex;
     justify-content: center;
     font-weight: 700;
@@ -108,6 +126,7 @@ body{
     height: 100%;
     width: 100%;
     padding: 0;
+    margin-bottom: 20px;
 }
 .links li{
     align-items: center;
@@ -127,14 +146,14 @@ body{
 
 /* PROJECTS */
 .projects{
-    height: 25%;
+    height: auto;
     color: white;
     background-color: tomato;
     /* display: flex; */
 }
 .projects h1{
     margin: 0;
-    font-size: 4em;
+    font-size: 2.5em;
     display: flex;
     justify-content: center;
     font-weight: 700;
