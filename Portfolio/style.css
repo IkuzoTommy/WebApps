@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: black;
+    /* background-color: black; */
     margin: 0;
     background-color: rgb(56,21,124);
     font-family: 'Yantramanav', sans-serif;
@@ -18,18 +18,23 @@ body{
     margin: 0px;
     width: 100%;
     height: 50px;
-    background-color: rgb(70,19,106);
+    background-color: rgb(20,47,67);
     border-radius: 2.5px;
+    /* position:fixed;
+    top: 0px; */
+    /* display: flex;
+    justify-content: space-between;
     /* box-shadow: white; */
 }
+
 /* WELCOME SECTION */
 .welcomeSec{
     width: 100%;
     display: flex;
-    padding: 5px;
+    padding: 60px 5px 5px 5px;
     justify-content: space-evenly;
     flex-direction: column;
-    background-color: lightpink;
+    background-color: rgb(20,47,67);
     height: auto;
 }
 .welcomeSec p{
@@ -40,25 +45,19 @@ body{
     margin: 0;
     padding: 10px;
 }
-.welcomeMssg{
-    color: white;
-    /* height: 25%; */
-    width: 50%;
-    border: 2px solid black;
-
-}
 .welcome{
     font-size: 5em; 
     text-align: center;
     margin: 0;
     align-items: center;
+    color: white;
     /* padding: 25% 0 25% 0; */
 }
 
 /* BOUT ME SECTION */
 .aboutMe{
     height: auto;
-    background-color: thistle;
+    background-color: rgb(255,171,76);
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -70,7 +69,7 @@ body{
     display: flex;
     justify-content: center;
     font-weight: 700;
-    color: orange;
+    color: rgb(56,21,124);
     padding-top: 5px;
 
 }
@@ -106,7 +105,8 @@ body{
 /* CONTACT ME */
 .contactMe{
     height: auto;
-    background-color: violet;
+    background-color: rgb(255,95,126);
+    padding: 35px 0 35px 0;
 
 }
 .contactMe h1{
@@ -115,11 +115,11 @@ body{
     display: flex;
     justify-content: center;
     font-weight: 700;
-    color: orange;
+    color: rgb(56,21,124);
 }
 .links {
     text-decoration: none;
-    color: white;
+    /* color: white; */
     display: flex;
     gap: 15px;
     justify-content: space-evenly;
@@ -131,24 +131,28 @@ body{
 .links li{
     align-items: center;
     list-style: none;
-    border: 3px orange solid;
+    border: 3px rgb(255,171,76) solid;
     border-radius: 15px;
 }
 .button{
     color: white;
     background-color: rgba(0,0,0,0);
-    width: 120px;
-    height: 40px;
+    width: 125px;
+    height: 45px;
     font-size: 1.5em;
     border: none;
-    font-weight: 500;  
+    font-weight: 600;  
+}
+.links li a{
+    text-decoration: none;
 }
 
 /* PROJECTS */
 .projects{
     height: auto;
     color: white;
-    background-color: tomato;
+    background-color: rgb(176,0,185);
+    padding: 20px 0 20px 0;
     /* display: flex; */
 }
 .projects h1{
@@ -157,14 +161,15 @@ body{
     display: flex;
     justify-content: center;
     font-weight: 700;
-    color: orange;
+    color: rgb(255,171,76);
 }
 .proj{
     margin: 0;
     gap: 5px;
-    width: 100%;
+    width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
+    flex-direction: row;
     border: 1px solid white;
 }
