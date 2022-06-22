@@ -71,6 +71,7 @@ body{
     font-weight: 700;
     color: rgb(56,21,124);
     padding-top: 5px;
+    width: 100%;
 
 }
 .aboutMe .bioBlurb p{
@@ -79,12 +80,14 @@ body{
     color: white;
     margin: 0;
     text-align: center;
+    /* align-items: left; */
 }
 .bioBlurb{
     display: flex;
-    width: 100%;
+    width: auto;
     height: auto;
     padding: 10px;
+    flex-direction: row;
     
 
 }
@@ -94,7 +97,8 @@ body{
     padding: 1%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: right; */
+    /* flex-direction: row; */
 }
 .pic img{
     border: 5px solid white;
