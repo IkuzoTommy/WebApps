@@ -17,7 +17,7 @@ body{
 }
 .cardCont{
     display: flex;
-    width: 55%; /* of body width */
+    width: 49%; /* of body width */
     height: 85%;
 
 
@@ -36,18 +36,21 @@ body{
     /* border: 5px solid black; */
 }
 .productInfo{
-    padding: 25px;
+    padding: 30px;
     background-color: hsl(0, 0%, 100%);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 50%;
     height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 h1{
     color: hsl(212, 21%, 14%);
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 2.9em;
+    font-size: 2.5em;
     padding: 10px 0 10px 0;
 }
 
@@ -57,12 +60,13 @@ h2,h3,p {
 }
 p{
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-size: 14px;
     font-weight: 500;
+    line-height: 1.9em;
 }
 h2{
-    padding: 10px 0 10px 0;
+    padding: 15px 0 15px 0;
     font-size: 14px;
     font-weight: 700;
 }
@@ -72,21 +76,41 @@ h2{
 #button{
     background-color:hsl(158, 36%, 37%);
     width: 100%;
+    border: none;
     border-radius: 10px;
     height: 10%;
     justify-content: center;
     align-items: center; 
+    display:flex;
 }
-#button p, #icon{
-    color: white;
-    display: inline;
-    justify-content: space-around;
-}
-#button p{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
 
+#addTo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
 }
+#addTo,
+#icon{
+    display: inline-flex;
+    color: white;
+}
+#icon{
+    padding: 0 10px 0 0;
+}
+
+.price{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+#oldPrice{
+    font-size: 14px;
+    font-weight: 100;
+}
+
 
 .attribution{
     display: none;
