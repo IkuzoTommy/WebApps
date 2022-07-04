@@ -13,12 +13,14 @@ body{
     width: 1440px;
     background-color: hsl(30, 38%, 92%);
     justify-content: space-around;
-    padding-top: 15%;
+    align-items: center;
 }
 .cardCont{
     display: flex;
-    width: 49%; /* of body width */
-    height: 85%;
+    width: 60%; /* of body width */
+    height: 75%;
+    padding: 0 25px 0 25px;
+    justify-content: center;
 
 
 }
@@ -46,11 +48,14 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
 }
+.productInfo h2{
+    font-size: 1em;
+}
 h1{
     color: hsl(212, 21%, 14%);
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 3em;
     padding: 10px 0 10px 0;
 }
 
@@ -104,10 +109,11 @@ h2{
     align-items: center;
     gap: 30px;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 #oldPrice{
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 100;
 }
 
