@@ -11,7 +11,7 @@ body{
     display: flex;
     height: 800px;
     width: 1440px;
-    background-color:rgb(242,233,227);
+    background-color: hsl(30, 38%, 92%);
     justify-content: space-around;
     padding-top: 15%;
 }
@@ -36,13 +36,58 @@ body{
     /* border: 5px solid black; */
 }
 .productInfo{
-    padding: 10px;
-    background-color: rgb(255,255,255);
+    padding: 25px;
+    background-color: hsl(0, 0%, 100%);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 50%;
     height:100%;
 }
+h1{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.9em;
+    padding: 10px 0 10px 0;
+}
+
+h2,h3,p {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+h2{
+    padding: 10px 0 10px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+#newPrice{
+    color: hsl(158, 36%, 37%);
+}
+#button{
+    background-color:hsl(158, 36%, 37%);
+    width: 100%;
+    border-radius: 10px;
+    height: 10%;
+    justify-content: center;
+    align-items: center; 
+}
+#button p, #icon{
+    color: white;
+    display: inline;
+    justify-content: space-around;
+}
+#button p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+}
+
 .attribution{
     display: none;
 }
