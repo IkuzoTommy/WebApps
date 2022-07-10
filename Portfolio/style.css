@@ -152,28 +152,14 @@ body{
 }
 
 /* PROJECTS */
-.projects{
-    height: auto;
-    color: white;
-    background-color: rgb(176,0,185);
-    padding: 20px 0 20px 0;
-    /* display: flex; */
-}
-.projects h1{
-    margin: 0;
-    font-size: 2.5em;
+project-container{
     display: flex;
-    justify-content: center;
-    font-weight: 700;
-    color: rgb(255,171,76);
+    justify-content:space-around;
+
+
 }
-.proj{
-    margin: 0;
-    gap: 5px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    border: 1px solid white;
+
+proj-card{
+    width: 200px;
+    height: 500px;
 }
