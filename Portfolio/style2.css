@@ -33,9 +33,7 @@ ul{
     justify-content: space-around;
     font-size: 30px;
 }
-ul.show{
-    display: block;
-}
+
 /* lis */
 .nav-item { 
     text-decoration: none;
@@ -195,6 +193,9 @@ footer{
     }
     .logo{
         display: none;
+    }
+    ul.show{
+        display: block;
     }
 }
 
