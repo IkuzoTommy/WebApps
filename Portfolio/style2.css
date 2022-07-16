@@ -125,6 +125,12 @@ p{
     display: flex;
     justify-content: space-around;
 }
+@media only screen and (max-width:1000px){
+    .proje-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 .proj-card{
     width: 300px;
     height: 500px;
@@ -137,4 +143,24 @@ p{
     margin-top: 25px;
     width: 300px;
     border-radius: 125px;
+
 }
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.proj-link{
+    text-decoration: none;
+    color: #ef744b;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+footer{
+    color: white;
+    text-align:center;
+    padding: 80px;
+}
+
+
