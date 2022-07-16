@@ -33,11 +33,14 @@ ul{
     justify-content: space-around;
     font-size: 30px;
 }
+ul.show{
+    display: block;
+}
 /* lis */
 .nav-item { 
     text-decoration: none;
-
 }
+
 h1{
     font-size: 90px;
     margin: 0;
@@ -162,5 +165,36 @@ footer{
     text-align:center;
     padding: 80px;
 }
+.hamburger{
+    display: none;
+}
+.hamburger:focus{
+    outline: 0;
+}
+@media only screen and (max-width:1000px){
+    .hamburger{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+    ul{
+        display: none;
+        background-color: #2b2c38;
+        margin: 0;
+    }
+    nav{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
 
+    }
+    .logo{
+        display: none;
+    }
+}
 
