@@ -112,10 +112,24 @@
     </section>
     <footer id="contact-me">
         <h2>Contact Me</h2>
-        <form action="https://formsubmit.co/mlockwooddev@gmail.com" method="POST">
-            <input type="text" name="name" required>
-            <input type="email" name="email" required>
-            <button type="submit">Send</button>
+        <form action="index2.html" method="POST">
+            <div class="input-container">
+                <input type="text" name="name" class="input">
+                <label for="">Username</label>
+            </div>
+            <div class="input-container">
+                <input type="text" name="email" class="input">
+                <label for="">Email</label>
+            </div>
+            <div class="input-container">
+                <input type="tel" name="phone" class="input">
+                <label for="">Phone Number</label>
+            </div>
+            <div class="input-container textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="">Message</label>
+            </div>
+            <input type="submit" value="Send" class="btn">Send</input>
        </form>
     </footer>
 
