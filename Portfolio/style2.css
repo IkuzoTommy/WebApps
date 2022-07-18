@@ -161,10 +161,11 @@ a{
 footer{
     color: white;
     text-align:center;
-    padding: 80px;
+    padding: 0 80px 10px 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: auto;
 }
 form{
     padding: 2rem 2.2rem;
@@ -173,7 +174,6 @@ form{
     position: relative;
 }
 .contact-form{
-    background-color: blue;
     width: 100%;
     text-align: center;;
 }
