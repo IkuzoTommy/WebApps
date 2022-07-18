@@ -111,26 +111,34 @@
         </div>
     </section>
     <footer id="contact-me">
-        <h2>Contact Me</h2>
-        <form action="index2.html" method="POST">
-            <div class="input-container">
-                <input type="text" name="name" class="input">
-                <label for="">Username</label>
-            </div>
-            <div class="input-container">
-                <input type="text" name="email" class="input">
-                <label for="">Email</label>
-            </div>
-            <div class="input-container">
-                <input type="tel" name="phone" class="input">
-                <label for="">Phone Number</label>
-            </div>
-            <div class="input-container textarea">
-                <textarea name="message" class="input"></textarea>
-                <label for="">Message</label>
-            </div>
-            <input type="submit" value="Send" class="btn">Send</input>
-       </form>
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="index2.html" autocomplete="off">
+                <div class="input-container">
+                    <input type="text" name="name" class="input">
+                    <label for="">Username</label>
+                    <span>Username</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="email" class="input">
+                    <label for="">Email</label>
+                    <span>Email</span>
+                </div>
+                <div class="input-container">
+                    <input type="tel" name="phone" class="input">
+                    <label for="">Phone Number</label>
+                    <span>Phone Number</span>
+                </div>
+                <div class="input-container textarea">
+                    <textarea name="message" class="input"></textarea>
+                    <label for="">Message</label>
+                    <span>Message</span>
+                </div>
+                <input type="submit" value="Send" class="btn"></input>
+           </form>
+
+        </div>
+
     </footer>
 
 </body>
