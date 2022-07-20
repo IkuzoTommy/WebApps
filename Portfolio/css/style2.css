@@ -21,7 +21,8 @@ footer{
 }
 nav{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
 
 }
 
@@ -91,6 +92,7 @@ p{
 .logo{
     height: 80px;
     margin: 30px;
+    display: none;
 }
 
 .sub-section{
@@ -100,10 +102,12 @@ p{
     background-color: rgb(255,171,76);
 }
 .sub-section-alt{
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-direction: column;
     text-align: center;
     padding: 80px;
+
 }
 .headshot{
     width: 400px;
@@ -172,12 +176,17 @@ form{
     z-index:10;
     overflow: hidden;
     position: relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
     justify-content: center;
 }
 .contact-form{
     width: 100%;
     text-align: center;
     align-items: center;
+    justify-content: space-around;
+
 }
 .input-container{
     position: relative;
@@ -186,6 +195,10 @@ form{
     align-items: center;
     justify-content: center;
     flex-direction:column;
+    min-width: 500px;
+}
+.input:active{
+    border: 2px solid #00FA9A;
 }
 .input{
     width: 100%;
@@ -208,6 +221,7 @@ textarea.input{
     border-radius: 22px;
     resize: none;
     overflow-y: auto;
+    max-width: 500px;
 }
 input-container label{
     position: absolute;
