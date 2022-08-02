@@ -131,6 +131,8 @@ p{
     justify-content: space-around;
     padding: 80px;
     background-color:  #ffab4c;
+    /* background-color:#142F43; */
+    
 
 }
 .sub-section h2{
@@ -238,7 +240,7 @@ form{
 .input{
     width: 100%;
     outline: none;
-    border: 2px solid #fafafa;
+    border: 2px solid #00FA9A;
     background: none;
     padding: 0.6rem 1.2rem;
     color: #fff;
@@ -248,6 +250,15 @@ form{
     border-radius: 25px;
     transition: 0.3s;
     justify-self: center;
+    background-color: rgba(0,0,0,.6);
+
+}
+::placeholder{
+    color: white;
+    opacity: .6;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
 
 }
 textarea.input{
@@ -257,7 +268,11 @@ textarea.input{
     resize: none;
     overflow-y: auto;
     max-width: 500px;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 500;
+    font-size: .95rem;
 }
+
 input-container label{
     position: absolute;
     top: 50%;
@@ -277,10 +292,10 @@ input-container label{
 }
 .btn{
     padding: 0.6rem 1.3rem;
-    background-color: #fff;
-    border: 2px solid #fafafa;
+    background-color: rgba(0,0,0,.6);
+    border: 2px solid #00FA9A;
     font-size: 0.95rem;
-    color:#1abc9c;
+    color:#fff;
     line-height: 1;
     border-radius: 25px;
     outline: none;
@@ -290,7 +305,8 @@ input-container label{
 }
 .btn:hover{
     background-color: transparent;
-    color: #fff;
+    color: #00FA9A;
+    box-shadow: #00FA9A;
 }
 .input-container span {
     position: absolute;
