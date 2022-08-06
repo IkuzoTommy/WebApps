@@ -20,6 +20,7 @@
     background-color: white;
 
 }
+ /* ----------------------------------------- WELCOME SECTION -----------------------------------------  */
 .hero{
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='800' preserveAspectRatio='none' viewBox='0 0 1440 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1531%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c486 C 96%2c423.6 288%2c143.4 480%2c174 C 672%2c204.6 768%2c655.8 960%2c639 C 1152%2c622.2 1344%2c199.8 1440%2c90L1440 800L0 800z' fill='rgba(56%2c 21%2c 124%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c539 C 72%2c509.4 216%2c347.8 360%2c391 C 504%2c434.2 576%2c813.6 720%2c755 C 864%2c696.4 936%2c142.4 1080%2c98 C 1224%2c53.6 1368%2c446 1440%2c533L1440 800L0 800z' fill='rgba(255%2c 95%2c 127%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c147 C 57.6%2c217.8 172.8%2c471.2 288%2c501 C 403.2%2c530.8 460.8%2c244.2 576%2c296 C 691.2%2c347.8 748.8%2c795 864%2c760 C 979.2%2c725 1036.8%2c121 1152%2c121 C 1267.2%2c121 1382.4%2c632.2 1440%2c760L1440 800L0 800z' fill='rgba(255%2c 171%2c 76%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1531'%3e%3crect width='1440' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
@@ -41,6 +42,7 @@ footer{
     background-attachment: fixed;
     background-size: cover; 
 }
+ /* ----------------------------------------- NAV BAR -----------------------------------------  */
 nav{
     display: flex;
     /* justify-content: space-between; */
@@ -83,13 +85,7 @@ p{
     font-size: 30px;
     font-weight: 100;
 }
-.bioBlurb{
-    font-size: 25px;
-    color:#fafafa;
-    border: 5px solid #00FA9A;
-    padding: 10px;
-    border-radius: 10px;
-}
+
 .subtext{
     font-size: 15px;
     font-weight: 300;
@@ -140,7 +136,7 @@ p{
     margin: 30px;
     display: none;
 }
-
+ /* ----------------------------------------- ABOUT ME SECTION -----------------------------------------  */
 .sub-section{
     display: flex;
     justify-content: space-around;
@@ -164,6 +160,19 @@ p{
     padding: 80px;
 
 }
+.bioBlurb{
+    font-size: 25px;
+    color:#fafafa;
+    /* border: 5px solid #00FA9A; */
+    padding: 10px;
+    border-radius: 10px;
+
+    /* background-color: rgba(0,0,0,.6);
+    font-weight: 500; */
+}
+#about-me{
+    height: 75vh;
+}
 .headshot{
     width: 400px;
     height: 400px;
@@ -174,6 +183,7 @@ p{
 .information{
     width: 50%;
     padding-right: 5px;
+    background-image: linear-gradient(to bottom , rgba(0,0,0,.9), transparent);
 
 }
 .headshot-container{
@@ -183,6 +193,7 @@ p{
     justify-content: center;
     padding-left: 5px;
 }
+ /* ----------------------------------------- PROJECT SECTION -----------------------------------------  */
 .proj-container{
     display: flex;
     justify-content: space-around;
@@ -219,6 +230,7 @@ a{
     text-decoration: none;
     color: white;
 }
+ /* ----------------------------------------- CONTACT ME SECTION -----------------------------------------  */
 footer{
     color: white;
     text-align:center;
@@ -381,6 +393,7 @@ input-container label{
 .hamburger:focus{
     outline: 0;
 }
+ /* ----------------------------------------- REACTIVNESS -----------------------------------------  */
 @media only screen and (max-width:1000px){
     .hamburger{
         display: block;
