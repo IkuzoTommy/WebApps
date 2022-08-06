@@ -146,8 +146,6 @@ p{
     /* background-attachment: fixed; */
     background-size: cover; 
     /* background-color:#142F43; */
-    
-
 }
 .sub-section h2{
     color: #ffab4c;
@@ -184,6 +182,7 @@ p{
     width: 50%;
     padding-right: 5px;
     background-image: linear-gradient(to bottom , rgba(0,0,0,.9), transparent);
+    
 
 }
 .headshot-container{
