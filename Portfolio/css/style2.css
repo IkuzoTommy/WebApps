@@ -135,10 +135,10 @@ p{
     background-color: #A9A9A9;
     color: #808080;
 }
-.socials svg:hover{
+/* .socials svg:hover{
     background-color: #00FA9A;
     border-radius: 55px;
-}
+} */
 .material-symbols-rounded {
     font-size: 3rem !important;
   font-variation-settings:

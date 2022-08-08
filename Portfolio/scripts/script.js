@@ -1,5 +1,6 @@
 const hamburgerButton = document.getElementById('hamburger');
 const navList = document.getElementById('nav-list');
+const socials = document.getElementById('social')
 
 function toggleButton(){
     navList.classList.toggle('show')
@@ -43,3 +44,10 @@ function checkEmail(){
 input.email.addEventListener('afterinput', checkEmail)
 
 input.addEventListener("change", checkFilled);
+
+function colorHover(){
+  document.getElementById('social')
+   .setAttribute('fill','red');
+}
+socials.addEventListener('mouseover', colorHover())
+
